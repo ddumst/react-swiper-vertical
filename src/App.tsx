@@ -5,7 +5,7 @@ import Layout from 'antd/lib/layout';
 
 import './App.css';
 
-import Landing from './pages/Landing';
+import Vertical from './pages/Vertical';
 
 const App: FC = () => {
   return (
@@ -13,15 +13,14 @@ const App: FC = () => {
       <Layout className="h-[100vh] relative">
         <Switch>
           <Route exact path="/">
-            <Landing />
+            <Vertical />
           </Route>
           <Redirect from="*" to="/" />
         </Switch>
-
         
         <a 
           className="absolute top-0 right-0 z-50"
-          href="https://github.com/ddumst/react-swiper-coverflow" 
+          href="https://github.com/ddumst/react-swiper-vertical" 
           target={"_blank"}
         >
           <img 
